@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pula() {
+        document.write("<br>")
+    }
+    function mostra(texto) {
+        document.write(texto);
+        pula();
+    }
+
+    var tabuadaEscolhida = parseInt(prompt("Qual tabuada você quer ?"))
+    var multiplicador = 1;
+
+    for(var multiplicador = 1; multiplicador <= 10; multiplicador++){
+        mostra(tabuadaEscolhida + " x " + multiplicador + " = " + tabuadaEscolhida * multiplicador);
+    }
+
+    // while(multiplicador <= 10){
+    //     mostra(tabuadaEscolhida + " x " + multiplicador + "= " + tabuadaEscolhida * multiplicador);
+    //     multiplicador = multiplicador + 1;
+    // }
+
+    mostra("Tabuada completa!")
+
+</script>
